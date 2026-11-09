@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "autokopanie",
+  "version": "${version}",
+  "name": "AutoKopanie",
+  "description": "Automatycznie kopie 2 generatory (drewno z netheru i brzoza) i sam wpisuje /kopanie <kod>.",
+  "authors": ["Mikolaj"],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["pl.autokopanie.AutoKopanie"]
+  },
+  "mixins": ["autokopanie.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
